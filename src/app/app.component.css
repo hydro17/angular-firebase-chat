@@ -1,0 +1,23 @@
+header {
+  text-align: center;
+  padding: 12px;
+  background-color: #777;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.main-container {
+  margin: 2rem auto;
+  width: 80%;
+}
+
+main {
+  background-color: #555;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px 0 10px 0;
+}
+
+
+
+

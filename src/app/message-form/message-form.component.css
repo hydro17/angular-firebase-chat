@@ -1,0 +1,22 @@
+form > div:first-of-type {
+  padding-bottom: 10px;
+  font-size: 1.3em;
+}
+
+textarea {
+  display: block;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 1.5em;
+  color: #777;
+  font-weight: 600;
+}
+
+button {
+  margin-top: 12px;
+  font-size: 1.2em;
+  padding: 5px;
+  border-radius: 5px;
+  color: #444;
+}

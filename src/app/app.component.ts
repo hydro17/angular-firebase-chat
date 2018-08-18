@@ -1,3 +1,5 @@
+import { Router } from '@angular/router';
+import { UserService } from './services/user.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-firebase-chat';
+
 }
