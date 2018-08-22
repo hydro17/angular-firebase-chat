@@ -8,8 +8,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./message.component.css']
 })
 export class MessageComponent {
-  // @Input('nickname') nickname: string;
-  // @Input('nickname') nickname: string;
   @Input('messageItem') messageItem: IMessage;
 
   constructor() { }
