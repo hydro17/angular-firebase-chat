@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "chat-f9704"
+  },
+  "targets": {
+    "chat-f9704": {
+      "hosting": {
+        "angular-firebase-chat": [
+          "chat-f9704"
+        ]
+      }
+    }
   }
 }
