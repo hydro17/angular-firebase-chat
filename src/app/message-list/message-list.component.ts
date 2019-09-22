@@ -1,5 +1,5 @@
 import { IMessage } from './../models/messages';
-import { AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireDatabase } from '@angular/fire/database';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
