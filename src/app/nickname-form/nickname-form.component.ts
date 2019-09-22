@@ -12,7 +12,7 @@ export class NicknameFormComponent {
 
   constructor(private userService: UserService, router: Router) {
     userService.activeNicknameSet
-      .subscribe((nickname) => router.navigate(['/message-container']));
+      .subscribe((nickname) => router.navigate(['/chat-window']));
   }
 
   saveNickname(nickname: string) {

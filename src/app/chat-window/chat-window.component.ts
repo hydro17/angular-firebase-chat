@@ -2,11 +2,11 @@ import { Component, OnInit, ViewChild, ElementRef, AfterViewChecked, AfterViewIn
 
 @Component({
   // tslint:disable-next-line:component-selector
-  selector: 'message-container',
-  templateUrl: './message-container.component.html',
-  styleUrls: ['./message-container.component.css']
+  selector: 'chat-window',
+  templateUrl: './chat-window.component.html',
+  styleUrls: ['./chat-window.component.css']
 })
-export class MessageContainerComponent implements OnInit, AfterViewChecked, AfterViewInit {
+export class ChatWindowComponent implements OnInit, AfterViewChecked, AfterViewInit {
   @ViewChild('messageListWrapper', { static: false }) messageListWrapper: ElementRef;
 
   constructor() { }

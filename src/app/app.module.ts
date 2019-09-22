@@ -14,7 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { MessageComponent } from './message/message.component';
 import { MessageFormComponent } from './message-form/message-form.component';
 import { MessageListComponent } from './message-list/message-list.component';
-import { MessageContainerComponent } from './message-container/message-container.component';
+import { ChatWindowComponent } from './chat-window/chat-window.component';
 import { ArrayReversePipe } from './array-reverse.pipe';
 import { InitalInfoComponent } from './inital-info/inital-info.component';
 import { NicknameFormComponent } from './nickname-form/nickname-form.component';
@@ -26,7 +26,7 @@ import { NicknameFormComponent } from './nickname-form/nickname-form.component';
     MessageComponent,
     MessageFormComponent,
     MessageListComponent,
-    MessageContainerComponent,
+    ChatWindowComponent,
     ArrayReversePipe,
     InitalInfoComponent,
     NicknameFormComponent
@@ -38,7 +38,7 @@ import { NicknameFormComponent } from './nickname-form/nickname-form.component';
     AngularFireDatabaseModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      { path: 'message-container', component: MessageContainerComponent },
+      { path: 'chat-window', component: ChatWindowComponent },
       { path: 'nickname-form', component: NicknameFormComponent },
       { path: '**', component: HomeComponent }
     ])
