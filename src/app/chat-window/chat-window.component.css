@@ -6,17 +6,22 @@
     "chat-messages" 
     "chat-form";
   row-gap: 1em;
-  height: calc(calc(100vh - 46px -32px) * 0.8);
+  height: calc(calc(100vh - 46px - 32px - 32px) * 0.95);
 }
 
 .message-list-wrapper {
   grid-area: chat-messages;
-  margin-left: 30px;
-  margin-right: 15px;
-  padding-right: 15px;
+  box-shadow: inset 0 0 4px 2px rgba(0, 0, 0, 0.45);
+  padding: 0em 1.4em;
   overflow-y: auto;
 }
 
 message-form {
   grid-area: chat-form;
+}
+
+@media only screen and (min-width: 500px) {
+  :host {
+    height: calc(calc(100vh - 46px - 32px - 32px) * 0.87);
+  }
 }

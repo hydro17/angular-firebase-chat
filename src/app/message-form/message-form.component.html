@@ -1,12 +1,9 @@
 <form (ngSubmit)="sendMessage(messageContent)">
   <!-- <div>{{userService.activeNickname}}, write your message</div> -->
-  <div>Write your message</div>
-  <label for="message-content"></label>
-  <textarea #messageContent
-            name="message-content"
-            id="message-content"
-            cols="30"
-            rows="3iiii"></textarea>
+  <div>Write your message <span class="send-message-info">(to send message: ctrl+enter or press button)</span>
+  </div>
+
+  <textarea #messageContent (keydown.control.enter)="sendMessage(messageContent)"></textarea>
 
   <button type="submit">Send message</button>
 </form>
