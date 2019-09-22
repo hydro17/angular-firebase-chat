@@ -1,12 +1,22 @@
-.message-container {
-  display: flex;
+:host {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: 
+    "chat-messages" 
+    "chat-form";
+  row-gap: 1em;
+  height: calc(calc(100vh - 46px -32px) * 0.8);
 }
 
-message-list {
-  flex: 1;
+.message-list-wrapper {
+  grid-area: chat-messages;
   margin-left: 30px;
   margin-right: 15px;
-  max-height: 500px;
   padding-right: 15px;
   overflow-y: auto;
+}
+
+message-form {
+  grid-area: chat-form;
 }

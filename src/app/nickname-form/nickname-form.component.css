@@ -1,17 +1,20 @@
-label {
+:host {
   display: block;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
   font-size: 1.3em;
 }
 
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
 input {
-  font-size: 1.3em;
   border: 3px solid #ddd;
   border-radius: 5px;
   padding: 6px;
   background-color: #fafafa;
   color: #777;
   font-weight: 600;
-  margin-bottom: 0.5em;
 }
