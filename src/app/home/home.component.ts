@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -8,4 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent {
 
+  constructor(private router: Router) { }
+
+  onUserNicknameIsSet() {
+    this.router.navigate(['chat-window']);
+  }
 }

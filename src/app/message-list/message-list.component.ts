@@ -1,6 +1,6 @@
-import { IMessage } from './../models/messages';
+import { IMessage } from '../models/messages';
 import { AngularFireDatabase } from '@angular/fire/database';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -9,14 +9,10 @@ import { Observable } from 'rxjs';
   templateUrl: './message-list.component.html',
   styleUrls: ['./message-list.component.css']
 })
-export class MessageListComponent implements OnInit {
+export class MessageListComponent {
   messagesList$: Observable<IMessage[]>;
 
   constructor(private db: AngularFireDatabase) {
     this.messagesList$ = db.list('/messages').valueChanges() as Observable<IMessage[]>;
   }
-
-  ngOnInit() {
-  }
-
 }

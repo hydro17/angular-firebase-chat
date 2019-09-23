@@ -1,4 +1,4 @@
-import { IMessage } from './../models/messages';
+import { IMessage } from '../models/messages';
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./message.component.css']
 })
 export class MessageComponent {
-  @Input('messageItem') messageItem: IMessage;
+  @Input() messageItem: IMessage;
 
   constructor() { }
 

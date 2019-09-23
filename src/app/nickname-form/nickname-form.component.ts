@@ -1,6 +1,5 @@
-import { Router } from '@angular/router';
-import { UserService } from './../services/user.service';
-import { Component, OnInit } from '@angular/core';
+import { UserService } from '../services/user.service';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -9,13 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nickname-form.component.css']
 })
 export class NicknameFormComponent {
+  @Output() private userNicknameIsSet: EventEmitter<null> = new EventEmitter();
 
-  constructor(private userService: UserService, router: Router) {
-    userService.activeNicknameSet
-      .subscribe((nickname) => router.navigate(['/chat-window']));
+  constructor(private userService: UserService) { }
+
+  handleUserNickname(userNickname: string) {
+    this.saveUserNickname(userNickname);
+    this.setUserNickname(userNickname);
+    this.userNicknameIsSet.emit(null);
   }
 
-  saveNickname(nickname: string) {
-    this.userService.save(nickname);
+  saveUserNickname(userNickname: string) {
+    this.userService.saveUserNickname(userNickname);
+  }
+
+  setUserNickname(userNickname: string) {
+    this.userService.setUserNickname(userNickname);
   }
 }

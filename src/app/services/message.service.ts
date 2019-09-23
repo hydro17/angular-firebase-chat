@@ -1,4 +1,4 @@
-import { IMessage } from './../models/messages';
+import { IMessage } from '../models/messages';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { Injectable } from '@angular/core';
 

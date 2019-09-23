@@ -3,7 +3,7 @@
   <div>Write your message <span class="send-message-info">(to send message: ctrl+enter or press button)</span>
   </div>
 
-  <textarea #messageContent (keydown.control.enter)="sendMessage(messageContent)"></textarea>
+  <textarea #messageContent (keydown.control.enter)="sendMessage(messageContent)" autofocus></textarea>
 
   <button type="submit">Send message</button>
 </form>
