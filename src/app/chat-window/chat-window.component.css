@@ -4,7 +4,7 @@
   grid-template-rows: 1fr auto;
   grid-template-areas: 
     "chat-messages" 
-    "chat-form";
+    "chat-message-form";
   row-gap: 1em;
   height: calc(calc(100vh - 46px - 32px - 32px) * 0.95);
 }
@@ -17,7 +17,7 @@
 }
 
 message-form {
-  grid-area: chat-form;
+  grid-area: chat-message-form;
 }
 
 @media only screen and (min-width: 500px) {
