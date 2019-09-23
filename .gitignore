@@ -24,6 +24,10 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 
+# System Files
+.DS_Store
+Thumbs.db
+
 # misc
 /.sass-cache
 /connect.lock
@@ -33,7 +37,4 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
-
-# System Files
-.DS_Store
-Thumbs.db
+.firebase/hosting.ZGlzdFxhbmd1bGFyLWZpcmViYXNlLWNoYXQ.cache
